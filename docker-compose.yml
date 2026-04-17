@@ -1,0 +1,19 @@
+services:
+  chatbot:
+    # Construye la imagen a partir del Dockerfile del proyecto
+    build: .
+    image: chatbot-docker
+
+    # Variables de entorno: pasamos el display del host al contenedor
+    environment:
+      - DISPLAY=${DISPLAY}
+
+    # Volúmenes:
+    # - Socket X11 para mostrar la ventana gráfica en el host
+    # - base_datos.json para persistencia de datos
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ./base_datos.json:/app/base_datos.json
+
+    # Permite al contenedor acceder al servidor gráfico del host
+    network_mode: host
