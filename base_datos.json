@@ -1,0 +1,49 @@
+{
+  "preguntas": [
+    {
+      "pregunta": "docker build",
+      "respuesta": "El comando `docker build` se usa para construir una imagen Docker a partir de un Dockerfile.",
+      "url": "https://docs.docker.com/engine/reference/commandline/build/"
+    },
+    {
+      "pregunta": "docker run",
+      "respuesta": "El comando `docker run` crea y ejecuta un contenedor basado en una imagen. Ejemplo: `docker run -p 8080:80 nginx`.",
+      "url": "https://docs.docker.com/engine/reference/run/"
+    },
+    {
+      "pregunta": "docker ps",
+      "respuesta": "El comando `docker ps` muestra los contenedores en ejecución. Usa `docker ps -a` para ver también los detenidos.",
+      "url": "https://docs.docker.com/engine/reference/commandline/ps/"
+    },
+    {
+      "pregunta": "docker images",
+      "respuesta": "El comando `docker images` lista las imágenes almacenadas en tu máquina local.",
+      "url": "https://docs.docker.com/engine/reference/commandline/images/"
+    },
+    {
+      "pregunta": "docker stop",
+      "respuesta": "El comando `docker stop` detiene un contenedor en ejecución. Ejemplo: `docker stop mi_contenedor`.",
+      "url": "https://docs.docker.com/engine/reference/commandline/stop/"
+    },
+    {
+      "pregunta": "docker rm",
+      "respuesta": "El comando `docker rm` elimina un contenedor detenido. Ejemplo: `docker rm mi_contenedor`.",
+      "url": "https://docs.docker.com/engine/reference/commandline/rm/"
+    },
+    {
+      "pregunta": "docker rmi",
+      "respuesta": "El comando `docker rmi` elimina una imagen de tu sistema local. Ejemplo: `docker rmi mi_imagen`.",
+      "url": "https://docs.docker.com/engine/reference/commandline/rmi/"
+    },
+    {
+      "pregunta": "docker compose up",
+      "respuesta": "El comando `docker compose up` levanta los servicios definidos en un archivo docker-compose.yml. Usa -d para ejecutarlos en segundo plano.",
+      "url": "https://docs.docker.com/compose/reference/"
+    },
+    {
+      "pregunta": "docker compose down",
+      "respuesta": "El comando `docker compose down` detiene y elimina los contenedores, redes y volúmenes creados por docker compose up.",
+      "url": "https://docs.docker.com/compose/reference/"
+    }
+  ]
+}
